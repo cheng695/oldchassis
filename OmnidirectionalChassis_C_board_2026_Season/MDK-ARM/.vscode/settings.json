@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "xutility": "cpp",
+        "memory": "cpp",
+        "string": "cpp",
+        "utility": "cpp",
+        "xmemory": "cpp",
+        "xstring": "cpp",
+        "limits": "cpp",
+        "freertos.h": "c",
+        "task.h": "c",
+        "croutine.h": "c",
+        "usercan.hpp": "c",
+        "djimotor.hpp": "c",
+        "clicker.hpp": "c",
+        "iostream": "cpp"
+    }
+}

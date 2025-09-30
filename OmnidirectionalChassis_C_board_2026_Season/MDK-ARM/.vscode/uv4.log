@@ -1,0 +1,308 @@
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'F:\keil5\ARM\ARMCC\Bin'
+Rebuild target 'OmnidirectionalChassis_C_board_2026_Season'
+Note: source file '.\User\High\Collectivity\Ensemble.hpp' - object file renamed from 'OmnidirectionalChassis_C_board_2026_Season\Ensemble.o' to 'OmnidirectionalChassis_C_board_2026_Season\ensemble_1.o'.Note: source file '.\User\Middle\MotorControl\ADRC.hpp' - object file renamed from 'OmnidirectionalChassis_C_board_2026_Season\ADRC.o' to 'OmnidirectionalChassis_C_board_2026_Season\adrc_1.o'.Note: source file '.\User\Middle\MotorControl\Feedback.hpp' - object file renamed from 'OmnidirectionalChassis_C_board_2026_Season\Feedback.o' to 'OmnidirectionalChassis_C_board_2026_Season\feedback_1.o'.Note: source file '.\User\Middle\MotorControl\PID.hpp' - object file renamed from 'OmnidirectionalChassis_C_board_2026_Season\PID.o' to 'OmnidirectionalChassis_C_board_2026_Season\pid_1.o'.Note: source file '.\User\Middle\MotorControl\Invoke.hpp' - object file renamed from 'OmnidirectionalChassis_C_board_2026_Season\Invoke.o' to 'OmnidirectionalChassis_C_board_2026_Season\invoke_1.o'.Note: source file '.\User\Middle\RemoteControl\RemoteOperation.hpp' - object file renamed from 'OmnidirectionalChassis_C_board_2026_Season\RemoteOperation.o' to 'OmnidirectionalChassis_C_board_2026_Season\remoteoperation_1.o'.Note: source file '.\User\Low\ControllerAreaNetwork\UserCan.hpp' - object file renamed from 'OmnidirectionalChassis_C_board_2026_Season\UserCan.o' to 'OmnidirectionalChassis_C_board_2026_Season\usercan_1.o'.Note: source file '.\User\Low\MotorLibrary\BenMo.hpp' - object file renamed from 'OmnidirectionalChassis_C_board_2026_Season\BenMo.o' to 'OmnidirectionalChassis_C_board_2026_Season\benmo_1.o'.Note: source file '.\User\Low\MotorLibrary\DaMiao.hpp' - object file renamed from 'OmnidirectionalChassis_C_board_2026_Season\DaMiao.o' to 'OmnidirectionalChassis_C_board_2026_Season\damiao_1.o'.Note: source file '.\User\Low\MotorLibrary\DJIMotor.hpp' - object file renamed from 'OmnidirectionalChassis_C_board_2026_Season\DJIMotor.o' to 'OmnidirectionalChassis_C_board_2026_Season\djimotor_1.o'.Note: source file '.\User\Low\UniversalAsynchronousTransceiver\Clicker.hpp' - object file renamed from 'OmnidirectionalChassis_C_board_2026_Season\Clicker.o' to 'OmnidirectionalChassis_C_board_2026_Season\clicker_1.o'.assembling startup_stm32f407xx.s...
+compiling main.c...
+.\User\../User/Low/ControllerAreaNetwork/../MotorLibrary/DJIMotor.hpp(20): error:  #20: identifier "namespace" is undefined
+  namespace motor
+.\User\../User/Low/ControllerAreaNetwork/../MotorLibrary/DJIMotor.hpp(21): error:  #65: expected a ";"
+  {
+.\User\../User/Low/ControllerAreaNetwork/../MotorLibrary/DJIMotor.hpp(42): warning:  #12-D: parsing restarts here after previous syntax error
+      };
+.\User\../User/Low/ControllerAreaNetwork/../MotorLibrary/DJIMotor.hpp(45): error:  #20: identifier "class" is undefined
+      class CANHandler
+.\User\../User/Low/ControllerAreaNetwork/../MotorLibrary/DJIMotor.hpp(46): error:  #65: expected a ";"
+      {
+.\User\../User/Low/ControllerAreaNetwork/../MotorLibrary/DJIMotor.hpp(68): warning:  #12-D: parsing restarts here after previous syntax error
+          CAN_HandleTypeDef* hcan_;
+.\User\../User/Low/ControllerAreaNetwork/../MotorLibrary/DJIMotor.hpp(69): error:  #169: expected a declaration
+      };
+.\User\../User/Low/ControllerAreaNetwork/../MotorLibrary/DJIMotor.hpp(73): error:  #20: identifier "class" is undefined
+      class MotorController
+.\User\../User/Low/ControllerAreaNetwork/../MotorLibrary/DJIMotor.hpp(74): error:  #65: expected a ";"
+      {
+.\User\../User/Low/ControllerAreaNetwork/../MotorLibrary/DJIMotor.hpp(113): warning:  #12-D: parsing restarts here after previous syntax error
+          CANHandler& canHandler_;
+.\User\../User/Low/ControllerAreaNetwork/../MotorLibrary/DJIMotor.hpp(114): error:  #169: expected a declaration
+      };
+.\User\../User/Low/ControllerAreaNetwork/../MotorLibrary/DJIMotor.hpp(116): error:  #169: expected a declaration
+  }
+.\User\../User/Low/UniversalAsynchronousTransceiver/Clicker.hpp(9): error:  #20: identifier "namespace" is undefined
+  namespace Clicker
+.\User\../User/Low/UniversalAsynchronousTransceiver/Clicker.hpp(10): error:  #65: expected a ";"
+  {
+.\User\../User/Low/UniversalAsynchronousTransceiver/Clicker.hpp(31): warning:  #12-D: parsing restarts here after previous syntax error
+              }mouse;
+.\User\../User/Low/UniversalAsynchronousTransceiver/Clicker.hpp(49): error:  #169: expected a declaration
+      };
+.\User\../User/Low/UniversalAsynchronousTransceiver/Clicker.hpp(50): error:  #169: expected a declaration
+  }
+.\User\../User/Low/UniversalAsynchronousTransceiver/Clicker.hpp(54): warning:  #12-D: parsing restarts here after previous syntax error
+  void RxEventCallback(void);
+../Core/Src/main.c(100): warning:  #223-D: function "RxEventCallback" declared implicitly
+    RxEventCallback();
+../Core/Src/main.c: 6 warnings, 13 errors
+compiling usart.c...
+compiling dma.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_msp.c...
+compiling can.c...
+compiling stm32f4xx_hal_timebase_tim.c...
+compiling gpio.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_can.c...
+compiling freertos.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling croutine.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling event_groups.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling list.c...
+compiling stm32f4xx_hal_uart.c...
+compiling queue.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stream_buffer.c...
+compiling tasks.c...
+compiling timers.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling heap_4.c...
+compiling Ensemble.cpp...
+compiling system_stm32f4xx.c...
+compiling Ensemble.hpp...
+Error: C4065E: type of input file 'User\High\Collectivity\Ensemble.hpp' unknown
+
+compiling ADRC.cpp...
+compiling ADRC.hpp...
+Error: C4065E: type of input file 'User\Middle\MotorControl\ADRC.hpp' unknown
+
+compiling Feedback.cpp...
+compiling Feedback.hpp...
+Error: C4065E: type of input file 'User\Middle\MotorControl\Feedback.hpp' unknown
+
+compiling PID.hpp...
+Error: C4065E: type of input file 'User\Middle\MotorControl\PID.hpp' unknown
+
+compiling PID.cpp...
+User\Middle\MotorControl\PID.cpp(3): error:  #276: name followed by "::" must be a class or namespace name
+   PID::PID_ M3508_201_PidInstance(PID::PID_::PID_MODE::PID_SPEED, 1.0f, 0.0f, 0.0f, 16384.0f, 0.0f, 0.0f);
+User\Middle\MotorControl\PID.cpp(4): error:  #276: name followed by "::" must be a class or namespace name
+  PID::PID_ M3508_202_PidInstance(PID::PID_::PID_MODE::PID_SPEED, 1.0f, 0.0f, 0.0f, 16384.0f, 0.0f, 0.0f);
+User\Middle\MotorControl\PID.cpp(5): error:  #276: name followed by "::" must be a class or namespace name
+  PID::PID_ M3508_203_PidInstance(PID::PID_::PID_MODE::PID_SPEED, 1.0f, 0.0f, 0.0f, 16384.0f, 0.0f, 0.0f);
+User\Middle\MotorControl\PID.cpp(6): error:  #276: name followed by "::" must be a class or namespace name
+  PID::PID_ M3508_204_PidInstance(PID::PID_::PID_MODE::PID_SPEED, 1.0f, 0.0f, 0.0f, 16384.0f, 0.0f, 0.0f);
+User\Middle\MotorControl\PID.cpp: 0 warnings, 4 errors
+compiling Invoke.cpp...
+../Core/Inc/usart.h(25): error:  #335: linkage specification is not allowed
+  extern "C" {
+../Core/Inc/usart.h(25): error:  #40: expected an identifier
+  extern "C" {
+../Core/Inc/usart.h(25): error:  #702: expected an "="
+  extern "C" {
+../Core/Inc/main.h(26): error:  #29: expected an expression
+  extern "C" {
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(87): warning:  #12-D: parsing restarts here after previous syntax error
+    EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(88): error:  #20: identifier "DMA1_Stream0_IRQn" is undefined
+    DMA1_Stream0_IRQn           = 11,     /*!< DMA1 Stream 0 global Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(89): error:  #20: identifier "DMA1_Stream1_IRQn" is undefined
+    DMA1_Stream1_IRQn           = 12,     /*!< DMA1 Stream 1 global Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(90): error:  #20: identifier "DMA1_Stream2_IRQn" is undefined
+    DMA1_Stream2_IRQn           = 13,     /*!< DMA1 Stream 2 global Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(91): error:  #20: identifier "DMA1_Stream3_IRQn" is undefined
+    DMA1_Stream3_IRQn           = 14,     /*!< DMA1 Stream 3 global Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(92): error:  #20: identifier "DMA1_Stream4_IRQn" is undefined
+    DMA1_Stream4_IRQn           = 15,     /*!< DMA1 Stream 4 global Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(93): error:  #20: identifier "DMA1_Stream5_IRQn" is undefined
+    DMA1_Stream5_IRQn           = 16,     /*!< DMA1 Stream 5 global Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(94): error:  #20: identifier "DMA1_Stream6_IRQn" is undefined
+    DMA1_Stream6_IRQn           = 17,     /*!< DMA1 Stream 6 global Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(95): error:  #20: identifier "ADC_IRQn" is undefined
+    ADC_IRQn                    = 18,     /*!< ADC1, ADC2 and ADC3 global Interrupts                             */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(96): error:  #20: identifier "CAN1_TX_IRQn" is undefined
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(97): error:  #20: identifier "CAN1_RX0_IRQn" is undefined
+    CAN1_RX0_IRQn               = 20,     /*!< CAN1 RX0 Interrupt                                                */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(98): error:  #20: identifier "CAN1_RX1_IRQn" is undefined
+    CAN1_RX1_IRQn               = 21,     /*!< CAN1 RX1 Interrupt                                                */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(99): error:  #20: identifier "CAN1_SCE_IRQn" is undefined
+    CAN1_SCE_IRQn               = 22,     /*!< CAN1 SCE Interrupt                                                */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(100): error:  #20: identifier "EXTI9_5_IRQn" is undefined
+    EXTI9_5_IRQn                = 23,     /*!< External Line[9:5] Interrupts                                     */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(101): error:  #20: identifier "TIM1_BRK_TIM9_IRQn" is undefined
+    TIM1_BRK_TIM9_IRQn          = 24,     /*!< TIM1 Break interrupt and TIM9 global interrupt                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(102): error:  #20: identifier "TIM1_UP_TIM10_IRQn" is undefined
+    TIM1_UP_TIM10_IRQn          = 25,     /*!< TIM1 Update Interrupt and TIM10 global interrupt                  */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(103): error:  #20: identifier "TIM1_TRG_COM_TIM11_IRQn" is undefined
+    TIM1_TRG_COM_TIM11_IRQn     = 26,     /*!< TIM1 Trigger and Commutation Interrupt and TIM11 global interrupt */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(104): error:  #20: identifier "TIM1_CC_IRQn" is undefined
+    TIM1_CC_IRQn                = 27,     /*!< TIM1 Capture Compare Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(105): error:  #20: identifier "TIM2_IRQn" is undefined
+    TIM2_IRQn                   = 28,     /*!< TIM2 global Interrupt                                             */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(106): error:  #20: identifier "TIM3_IRQn" is undefined
+    TIM3_IRQn                   = 29,     /*!< TIM3 global Interrupt                                             */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(107): error:  #20: identifier "TIM4_IRQn" is undefined
+    TIM4_IRQn                   = 30,     /*!< TIM4 global Interrupt                                             */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(108): error:  #20: identifier "I2C1_EV_IRQn" is undefined
+    I2C1_EV_IRQn                = 31,     /*!< I2C1 Event Interrupt                                              */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(109): error:  #20: identifier "I2C1_ER_IRQn" is undefined
+    I2C1_ER_IRQn                = 32,     /*!< I2C1 Error Interrupt                                              */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(110): error:  #20: identifier "I2C2_EV_IRQn" is undefined
+    I2C2_EV_IRQn                = 33,     /*!< I2C2 Event Interrupt                                              */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(111): error:  #20: identifier "I2C2_ER_IRQn" is undefined
+    I2C2_ER_IRQn                = 34,     /*!< I2C2 Error Interrupt                                              */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(112): error:  #20: identifier "SPI1_IRQn" is undefined
+    SPI1_IRQn                   = 35,     /*!< SPI1 global Interrupt                                             */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(113): error:  #20: identifier "SPI2_IRQn" is undefined
+    SPI2_IRQn                   = 36,     /*!< SPI2 global Interrupt                                             */
+User\Middle\MotorControl\Invoke.cpp: 1 warning, 30 errors
+compiling Invoke.hpp...
+Error: C4065E: type of input file 'User\Middle\MotorControl\Invoke.hpp' unknown
+
+compiling RemoteOperation.cpp...
+../Core/Inc/usart.h(25): error:  #335: linkage specification is not allowed
+  extern "C" {
+../Core/Inc/usart.h(25): error:  #40: expected an identifier
+  extern "C" {
+../Core/Inc/usart.h(25): error:  #702: expected an "="
+  extern "C" {
+../Core/Inc/main.h(26): error:  #29: expected an expression
+  extern "C" {
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(87): warning:  #12-D: parsing restarts here after previous syntax error
+    EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(88): error:  #20: identifier "DMA1_Stream0_IRQn" is undefined
+    DMA1_Stream0_IRQn           = 11,     /*!< DMA1 Stream 0 global Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(89): error:  #20: identifier "DMA1_Stream1_IRQn" is undefined
+    DMA1_Stream1_IRQn           = 12,     /*!< DMA1 Stream 1 global Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(90): error:  #20: identifier "DMA1_Stream2_IRQn" is undefined
+    DMA1_Stream2_IRQn           = 13,     /*!< DMA1 Stream 2 global Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(91): error:  #20: identifier "DMA1_Stream3_IRQn" is undefined
+    DMA1_Stream3_IRQn           = 14,     /*!< DMA1 Stream 3 global Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(92): error:  #20: identifier "DMA1_Stream4_IRQn" is undefined
+    DMA1_Stream4_IRQn           = 15,     /*!< DMA1 Stream 4 global Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(93): error:  #20: identifier "DMA1_Stream5_IRQn" is undefined
+    DMA1_Stream5_IRQn           = 16,     /*!< DMA1 Stream 5 global Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(94): error:  #20: identifier "DMA1_Stream6_IRQn" is undefined
+    DMA1_Stream6_IRQn           = 17,     /*!< DMA1 Stream 6 global Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(95): error:  #20: identifier "ADC_IRQn" is undefined
+    ADC_IRQn                    = 18,     /*!< ADC1, ADC2 and ADC3 global Interrupts                             */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(96): error:  #20: identifier "CAN1_TX_IRQn" is undefined
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(97): error:  #20: identifier "CAN1_RX0_IRQn" is undefined
+    CAN1_RX0_IRQn               = 20,     /*!< CAN1 RX0 Interrupt                                                */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(98): error:  #20: identifier "CAN1_RX1_IRQn" is undefined
+    CAN1_RX1_IRQn               = 21,     /*!< CAN1 RX1 Interrupt                                                */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(99): error:  #20: identifier "CAN1_SCE_IRQn" is undefined
+    CAN1_SCE_IRQn               = 22,     /*!< CAN1 SCE Interrupt                                                */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(100): error:  #20: identifier "EXTI9_5_IRQn" is undefined
+    EXTI9_5_IRQn                = 23,     /*!< External Line[9:5] Interrupts                                     */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(101): error:  #20: identifier "TIM1_BRK_TIM9_IRQn" is undefined
+    TIM1_BRK_TIM9_IRQn          = 24,     /*!< TIM1 Break interrupt and TIM9 global interrupt                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(102): error:  #20: identifier "TIM1_UP_TIM10_IRQn" is undefined
+    TIM1_UP_TIM10_IRQn          = 25,     /*!< TIM1 Update Interrupt and TIM10 global interrupt                  */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(103): error:  #20: identifier "TIM1_TRG_COM_TIM11_IRQn" is undefined
+    TIM1_TRG_COM_TIM11_IRQn     = 26,     /*!< TIM1 Trigger and Commutation Interrupt and TIM11 global interrupt */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(104): error:  #20: identifier "TIM1_CC_IRQn" is undefined
+    TIM1_CC_IRQn                = 27,     /*!< TIM1 Capture Compare Interrupt                                    */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(105): error:  #20: identifier "TIM2_IRQn" is undefined
+    TIM2_IRQn                   = 28,     /*!< TIM2 global Interrupt                                             */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(106): error:  #20: identifier "TIM3_IRQn" is undefined
+    TIM3_IRQn                   = 29,     /*!< TIM3 global Interrupt                                             */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(107): error:  #20: identifier "TIM4_IRQn" is undefined
+    TIM4_IRQn                   = 30,     /*!< TIM4 global Interrupt                                             */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(108): error:  #20: identifier "I2C1_EV_IRQn" is undefined
+    I2C1_EV_IRQn                = 31,     /*!< I2C1 Event Interrupt                                              */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(109): error:  #20: identifier "I2C1_ER_IRQn" is undefined
+    I2C1_ER_IRQn                = 32,     /*!< I2C1 Error Interrupt                                              */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(110): error:  #20: identifier "I2C2_EV_IRQn" is undefined
+    I2C2_EV_IRQn                = 33,     /*!< I2C2 Event Interrupt                                              */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(111): error:  #20: identifier "I2C2_ER_IRQn" is undefined
+    I2C2_ER_IRQn                = 34,     /*!< I2C2 Error Interrupt                                              */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(112): error:  #20: identifier "SPI1_IRQn" is undefined
+    SPI1_IRQn                   = 35,     /*!< SPI1 global Interrupt                                             */
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h(113): error:  #20: identifier "SPI2_IRQn" is undefined
+    SPI2_IRQn                   = 36,     /*!< SPI2 global Interrupt                                             */
+User\Middle\RemoteControl\RemoteOperation.cpp: 1 warning, 30 errors
+compiling RemoteOperation.hpp...
+Error: C4065E: type of input file 'User\Middle\RemoteControl\RemoteOperation.hpp' unknown
+
+compiling cmsis_os.c...
+compiling UserCan.hpp...
+Error: C4065E: type of input file 'User\Low\ControllerAreaNetwork\UserCan.hpp' unknown
+
+compiling BenMo.cpp...
+compiling BenMo.hpp...
+Error: C4065E: type of input file 'User\Low\MotorLibrary\BenMo.hpp' unknown
+
+compiling DaMiao.cpp...
+compiling port.c...
+compiling DaMiao.hpp...
+Error: C4065E: type of input file 'User\Low\MotorLibrary\DaMiao.hpp' unknown
+
+compiling TaskProcess.cpp...
+compiling DJIMotor.hpp...
+Error: C4065E: type of input file 'User\Low\MotorLibrary\DJIMotor.hpp' unknown
+
+compiling LingKongMortor.cpp...
+compiling LingKongMotor.hpp...
+Error: C4065E: type of input file 'User\Low\MotorLibrary\LingKongMotor.hpp' unknown
+
+compiling Clicker.hpp...
+Error: C4065E: type of input file 'User\Low\UniversalAsynchronousTransceiver\Clicker.hpp' unknown
+
+compiling UserCan.cpp...
+compiling DJIMotor.cpp...
+compiling Clicker.cpp...
+compiling BasicMathFunctions.c...
+compiling BasicMathFunctionsF16.c...
+compiling BayesFunctions.c...
+compiling BayesFunctionsF16.c...
+compiling CommonTables.c...
+compiling CommonTablesF16.c...
+compiling ComplexMathFunctions.c...
+compiling ComplexMathFunctionsF16.c...
+compiling ControllerFunctions.c...
+compiling MatrixFunctionsF16.c...
+Fatal error: C3904U: Could not open via file 'omnidirectionalchassis_c_board_2026_season\matrixfunctionsf16.__i'.
+compiling DistanceFunctions.c...
+F:/keil5/ARM/PACK/ARM/CMSIS-DSP/1.15.0/Source/DistanceFunctions/DistanceFunctions.c(54): warning:  #1-D: last line of file ends without a newline
+  #include "arm_dtw_init_window_q7.c"
+F:/keil5/ARM/PACK/ARM/CMSIS-DSP/1.15.0/Source/DistanceFunctions/DistanceFunctions.c: 1 warning, 0 errors
+compiling DistanceFunctionsF16.c...
+compiling FastMathFunctions.c...
+F:/keil5/ARM/PACK/ARM/CMSIS-DSP/1.15.0/Source/FastMathFunctions/arm_vexp_f32.c(123): warning:  #1-D: last line of file ends without a newline
+   */
+F:/keil5/ARM/PACK/ARM/CMSIS-DSP/1.15.0/Source/FastMathFunctions/FastMathFunctions.c: 1 warning, 0 errors
+compiling FastMathFunctionsF16.c...
+F:/keil5/ARM/PACK/ARM/CMSIS-DSP/1.15.0/Source/FastMathFunctions/arm_vexp_f16.c(96): warning:  #1-D: last line of file ends without a newline
+   */
+F:/keil5/ARM/PACK/ARM/CMSIS-DSP/1.15.0/Source/FastMathFunctions/FastMathFunctionsF16.c: 1 warning, 0 errors
+compiling FilteringFunctionsF16.c...
+compiling FilteringFunctions.c...
+compiling InterpolationFunctions.c...
+compiling InterpolationFunctionsF16.c...
+compiling MatrixFunctions.c...
+compiling SupportFunctionsF16.c...
+Fatal error: C3904U: Could not open via file 'omnidirectionalchassis_c_board_2026_season\supportfunctionsf16.__i'.
+compiling TransformFunctions.c...
+Fatal error: C3904U: Could not open via file 'omnidirectionalchassis_c_board_2026_season\transformfunctions.__i'.
+compiling SVMFunctionsF16.c...
+compiling SVMFunctions.c...
+compiling TransformFunctionsF16.c...
+Fatal error: C3904U: Could not open via file 'omnidirectionalchassis_c_board_2026_season\transformfunctionsf16.__i'.
+compiling QuaternionMathFunctions.c...
+compiling StatisticsFunctionsF16.c...
+compiling SupportFunctions.c...
+Fatal error: C3904U: Could not open via file 'omnidirectionalchassis_c_board_2026_season\supportfunctions.__i'.
+compiling StatisticsFunctions.c...
+"OmnidirectionalChassis_C_board_2026_Season\OmnidirectionalChassis_C_board_2026_Season.axf" - 94 Error(s), 11 Warning(s).
+Target not created.
+Build Time Elapsed:  00:08:48
